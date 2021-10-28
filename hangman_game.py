@@ -4,7 +4,7 @@ from time import sleep
 def play():
     print_game_header()
 
-    attempts, errors = level_attempts()
+    attempts, errors = level_select()
     secret_word = select_secret_word()
     word_blanks = ["_" for letter in secret_word]
     tried_letters = []
@@ -37,7 +37,7 @@ def print_game_header():
     print("Welcome to the hangman game")
     print("################################\n")
 
-def level_attempts():
+def level_select():
     while(True):
         print("(1) Easy (2) Medium (3) Hard\n")
         try:  
