@@ -1,4 +1,5 @@
 import random
+import os
 from time import sleep
 
 def play():
@@ -30,7 +31,6 @@ def play():
         print_win_message()
 
     print("\nGAME OVER\n")
-
 
 def print_game_header():
     print("################################")
